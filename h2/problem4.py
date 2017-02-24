@@ -11,8 +11,8 @@ from GaussianGenerativeModel import GaussianGenerativeModel
 # adjust these as you try to find the best fit for each classifier.
 
 # Logistic Regression parameters
-eta = .1
-lambda_parameter = .1
+eta = 0.001
+lambda_parameter = 0.0005
 
 
 # Do not change anything below this line!!
@@ -31,9 +31,9 @@ nb2 = GaussianGenerativeModel(isSharedCovariance=True)
 nb2.fit(X,Y)
 nb2.visualize("generative_result_shared_covariances.png")
 
-lr = LogisticRegression(eta=eta, lambda_parameter=lambda_parameter)
-lr.fit(X,Y)
-lr.visualize('logistic_regression_result.png')
+# lr = LogisticRegression(eta=eta, lambda_parameter=lambda_parameter)
+# lr.fit(X,Y)
+# lr.visualize('logistic_regression_result.png')
 
 
 
