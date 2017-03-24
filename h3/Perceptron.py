@@ -39,6 +39,7 @@ class Perceptron(object):
 
 		# Get the class predictions
 		Y_hat = self.predict(X_topredict)
+
 		Y_hat = Y_hat.reshape((xx.shape[0], xx.shape[1]))
 
 		cMap = c.ListedColormap(['r','b','g'])
